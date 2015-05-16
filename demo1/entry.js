@@ -1,5 +1,5 @@
 //browserify基本demo，无插件
-//browserify entry.js > bundle.js
+//browserify demo1/entry.js > demo1/bundle.js
 
 global.jQuery = require('jquery');
 require('tipso');
