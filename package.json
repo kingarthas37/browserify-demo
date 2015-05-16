@@ -23,8 +23,7 @@
     "browserify-shim":{
         "jquery": "$",
         "three": "global:THREE", 
-        
-        "test":"Test"
+        "test":{ "exports":"Test"}
     },
     "browserify":{
         "transform": ["browserify-shim"]

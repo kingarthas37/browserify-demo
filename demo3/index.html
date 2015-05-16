@@ -8,6 +8,38 @@
 
 
 
+<p>browserify-shim使用：</p>
+<ul>
+    <li>如果"three": "global:THREE",带global说明是使用外链，则three.js则不会合并到bundle.js中，只是引用</li>
+    <li>如果没有global，则会使用本地指向的three.js文件，会被合并到bundle.js中</li>
+   
+</ul>
+
+<hr/>
+
+<p>如果使用depends依赖的话，则可以在代码中省去require('jquery')，如下：</p>
+<p>
+
+    "browserify-shim":{   <br/>
+    "jquery": "$", <br/>
+    "three": "global:THREE",<br/>
+    "test":{ "exports":"Test","depends": [ "jquery" ] }<br/>
+    }
+</p>
+<p>
+    在代码中：
+</p>
+<p>
+    //global.jQuery = require('jquery');  此处不需要引用jquery<br/>
+   
+    var Test = require('test');<br/>
+
+    $('body');<br/>
+ 
+    Test();
+</p>
+
+
 <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/three.js/r61/three.min.js"></script>
 
 <script src="bundle.js"></script>
