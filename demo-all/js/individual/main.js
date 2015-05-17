@@ -1,4 +1,8 @@
 global.jQuery = require('jquery');
+var common = require('extrabux-common');
+
+console.log(common.version);
+
 var swfobject = require('swfobject');
 var flashDetect = require('flash-detect');
 
@@ -7,26 +11,15 @@ require('jquery-cookie');
 require('jquery-validate');
 
 
-(function($,window) {
     $(function() {
- 
 
         console.log(swfobject);
 
         console.log(flashDetect.installed);
 
-
-         
-
-
-
         $.cookie('user2323','kingarthas');
 
         $("#commentForm").validate();
-
-
-
-
 
         $('.jcarousel').jcarousel();
 
@@ -62,6 +55,4 @@ require('jquery-validate');
             .jcarouselPagination();
 
     });
-
-})(jQuery,window);
  
