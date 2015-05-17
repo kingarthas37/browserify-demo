@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+    <title>npm and jQuery demo</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    
+</head>
+<body>
+
+ <p>多文件操作：</p>
+ <p>browserify -r ./js/common.js > ./dist/common.js</p>
+ <p> browserify -x ./js/common.js ./js/a.js > ./dist/a.js</p>
+ 
+
+
+<script src="./dist/common.js"></script>
+<script src="./dist/a.js"></script>
+<script src="./dist/b.js"></script>
+ 
+</body>
+</html>
