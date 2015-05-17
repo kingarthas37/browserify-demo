@@ -7,10 +7,14 @@ require('jcarousel');
 require('bootstrap');
 require('validate');
 
+require('jquery-cookie');
 
 (function($,window) {
 
     $(function(){
+        
+        //$.cookie('king','111');
+        
 
         $('.title-tipso').tipso();
 
