@@ -1,0 +1,33 @@
+{
+    "dependencies": {
+        "bootstrap": "^3.3.4",
+        "fancybox": "^3.0.0",
+        "jcarousel": "^0.3.2",
+        "jquery": "^2.1.4",
+        "jquery-validation": "^1.13.1",
+        "jquery.cookie": "^1.4.1"
+    },
+    "devDependencies": {
+        "browserify": "^10.2.0",
+        "browserify-shim": "^3.8.6",
+        "factor-bundle": "^2.4.0"
+    },
+    "browserify":{
+        "transform": ["browserify-shim"]
+    },
+    "browser":{
+        "jquery":"./node_modules/jquery/dist/jquery.min.js",
+        "jcarousel": "./node_modules/jcarousel/dist/jquery.jcarousel.min.js",
+        "bootstrap": "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "jquery-cookie":"./node-modules/jquery.cookie/jquery.cookie.js",
+        "jquery-validate": "./js/external/jquery.validate.js",
+        "jquery-countdown":"./js/external/jquery.countdown.js",
+        "swfobject":"./js/external/swfobject.js",
+        "flash-detect":"./js/external/flash-detect.js"
+    },
+    "browserify-shim":{
+        "jquery": "$",
+        "swfobject":"swfobject",
+        "flash-detect":"FlashDetect"
+    }
+}
