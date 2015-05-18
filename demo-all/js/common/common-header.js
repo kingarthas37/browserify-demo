@@ -1,5 +1,6 @@
 require('jquery-cookie');
- 
+
+
 (function($,window) {
 
     'use strict';

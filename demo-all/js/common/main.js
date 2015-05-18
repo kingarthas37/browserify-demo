@@ -1,3 +1,6 @@
+require('../external/main.js');
+
+
 require('./common-header');
 require('./common-footer');
 
