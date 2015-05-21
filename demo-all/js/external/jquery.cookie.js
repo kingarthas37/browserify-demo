@@ -13,8 +13,8 @@ console.log("cookie.js loaded");
 		define(['jquery'], factory);
 	} else if (typeof exports === 'object') {
 		// CommonJS
-		//factory(require('jquery'));
-        factory(jQuery);
+		factory(require('jquery'));
+        //factory(jQuery);
 	} else {
 		// Browser globals
 		factory(jQuery);

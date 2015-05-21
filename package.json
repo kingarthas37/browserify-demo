@@ -20,7 +20,7 @@
     "validate": "./node_modules/jquery-validation/dist/jquery.validate.js",
     "test": "./demo3/test.js",
     "three": "./demo3/three.min.js",
-    "jquery-cookie":"./node_modules/jquery.cookie/jquery.cookie.js"
+    "jquery-cookie": "./node_modules/jquery.cookie/jquery.cookie.js"
   },
   "browserify-shim": {
     "jquery": "$",
@@ -33,5 +33,8 @@
     "transform": [
       "browserify-shim"
     ]
+  },
+  "devDependencies": {
+    "browserify": "^10.2.1"
   }
 }

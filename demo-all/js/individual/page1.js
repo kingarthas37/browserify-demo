@@ -4,13 +4,18 @@ var flashDetect = require('flash-detect');
 require('jcarousel');
 require('jquery-cookie');
 require('jquery-validate');
+ 
 
-$(function() {
+var page = EXAPP.namespace('EXAPP.pages.page1');
 
+page.init = function() {
+
+    console.log(swfobject);
+    
     console.log('page1');
     console.log(swfobject);
     console.log(flashDetect.installed);
-
+    
     $.cookie('user2323','kingarthas');
 
     $("#commentForm").validate();
@@ -47,6 +52,7 @@ $(function() {
             $(this).removeClass('active');
         })
         .jcarouselPagination();
+};
 
-});
- 
+
+module.exports = page;

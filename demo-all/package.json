@@ -16,7 +16,7 @@
         "transform": ["browserify-shim"]
     },
     "browser":{
-        "jquery":"./node_modules/jquery/dist/jquery.min.js",
+        "jquery":"./node_modules/jquery/dist/jquery.js",
         "bootstrap": "./node_modules/bootstrap/dist/js/bootstrap.min.js",
         "jcarousel": "./node_modules/jcarousel/dist/jquery.jcarousel.min.js",
         "jquery-cookie":"./js/external/jquery.cookie.js",
@@ -26,8 +26,8 @@
         "flash-detect":"./js/external/flash-detect.js"
     },
     "browserify-shim":{
-        "jquery":"$",
         "swfobject":"swfobject",
         "flash-detect":"FlashDetect"
     }
 }
+
